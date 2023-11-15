@@ -3,12 +3,8 @@
 
 import setuptools
 
-requirements = [
-    'kubernetes==25.3.0',
-    'oauthlib==2.1.0',
-    'requests-oauthlib==1.0.0',
-    'jmespath==0.9.0',
-]
+with open('./requirements.txt') as f:
+    requirements = f.read().splitlines()
 
 dependency_links = [
 ]
